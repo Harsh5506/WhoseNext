@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Character Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <button id="menu-toggle"><i class="fa-solid fa-face-surprise"></i> Menu</button>
+        <div class="button-container" id="button-menu">
+            <button onclick="generateCharacter('english')">ABC...</button>
+            <button onclick="generateCharacter('gujarati')">કખગ...</button>
+            <button onclick="generateCharacter('number')">1,2,3...</button>
+            <button onclick="resetCharacters()">Reset</button>
+        </div>
+    </nav>
+
+    <h1>Who's Next <span class="emoji"><i class="fa-solid fa-face-smile-wink"></i></span></i></h1>
+    <p id="letter"><i class="fa-solid fa-face-sad-cry"></i></p>
+
+</body>
+</html>
