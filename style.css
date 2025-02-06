@@ -4,9 +4,13 @@ body {
     background: url('background.jpg') no-repeat center center/cover;
     margin: 0;
     padding: 0;
-    background-size:cover;
+    background-size:auto;
 }
-
+@media (max-height: 478px) {
+    body {
+      background-size: cover;
+    }
+  }
 
 h1 {
     margin-top: 10px;
